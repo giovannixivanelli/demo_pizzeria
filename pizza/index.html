@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Comfortaa:wght@300;400;500;600;700&family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="img/PIZZERIA (1).svg" alt="" class="pizzeria-logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#home"
+              >Главная</a
+            >
+            <a class="nav-link" href="#main-menu">Меню</a>
+            <a class="nav-link" href="#delivery">Доставка</a>
+            <a class="nav-link disabled">О нас</a>
+            <a class="nav-link disabled">Контакты</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="first-container" id="home">
+      <div class="row">
+        <div class="col-12">
+          <div class="pizzeria-logo-container">
+            <img
+              src="img/PIZZERIA (1).svg"
+              alt=""
+              class="logo col-lg-12 col-md-12 col-sm-3"
+            />
+            <div class="tag-text">
+              <h2 class="tag-text tag-line">
+                <strong>ПИЦЦЫ · ЗАВТРАКИ · ДЕСЕРТЫ</strong>
+              </h2>
+              <h2 class="tag-text daily"><strong>Ежедневно</strong></h2>
+              <h2 class="tag-text schedule"><strong>10:00 - 22:00</strong></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="second-container" id="main-menu">
+      <div class="col-12">
+        <div class="row">
+          <div class="menu">Наше меню</div>
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active nav-signs"
+                id="pills-home-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-home"
+                type="button"
+                role="tab"
+                aria-controls="pills-home"
+                aria-selected="true"
+              >
+                ПИЦЦЫ
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link nav-signs"
+                id="pills-profile-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-profile"
+                type="button"
+                role="tab"
+                aria-controls="pills-profile"
+                aria-selected="false"
+              >
+                ЗАВТРАКИ
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link nav-signs"
+                id="pills-contact-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-contact"
+                type="button"
+                role="tab"
+                aria-controls="pills-contact"
+                aria-selected="false"
+              >
+                ДЕСЕРТЫ
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="pills-home"
+              role="tabpanel"
+              aria-labelledby="pills-home-tab"
+              tabindex="0"
+            >
+              <div
+                class="row row-cols-2 row-cols-lg-4 row-cols-md-2 row-cols-sm-2 g-4 d-flex align-content-lg-center align-content-md-center align-content-sm-center"
+              >
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="https://pizzaclub21.ru/assets/img/menu/pizza/gribnaya1.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Грибная</h5>
+                      <p class="card-text text-muted">300 г</p>
+                      <p class="card-text price">290₽</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="https://pizzaclub21.ru/assets/img/menu/pizza/Classic2.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Классическая</h5>
+                      <p class="card-text text-muted">300 г</p>
+                      <p class="card-text price">290₽</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="https://cafesilla.ru/thumb/2/byDD1LKwOJiPTLH90NPSuw/650r650/d/pikantnaya.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Пикантная</h5>
+                      <p class="card-text text-muted">300 г</p>
+                      <p class="card-text price">290₽</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="https://pizzaclub21.ru/assets/img/menu/pizza/mexiko4.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Мексиканская</h5>
+                      <p class="card-text text-muted">300 г</p>
+                      <p class="card-text price">290₽</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-profile"
+              role="tabpanel"
+              aria-labelledby="pills-profile-tab"
+              tabindex="0"
+            >
+              <div
+                class="tab-pane fade show active"
+                role="tabpanel"
+                aria-labelledby="pills-home-tab"
+                tabindex="0"
+              >
+                <div
+                  class="row row-cols-2 row-cols-lg-4 row-cols-md-2 row-cols-sm-2 g-4 d-flex align-content-lg-center align-content-md-center align-content-sm-center"
+                >
+                  <div class="col">
+                    <div class="card">
+                      <img
+                        src="https://pizzaclub21.ru/assets/img/menu/breakfest/breakfest-1.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Завтрак 1</h5>
+                        <p class="card-text text-muted p-1">200 г</p>
+                        <p
+                          class="card-text text-muted breakfast-description p-2"
+                        >
+                          2 яйца / бекон / 2 тоста / сыр
+                        </p>
+                        <p class="card-text price">250₽</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img
+                        src="https://pizzaclub21.ru/assets/img/menu/breakfest/2.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Завтрак 2</h5>
+                        <p class="card-text text-muted">255 г</p>
+                        <p class="card-text text-muted breakfast-description">
+                          2 яйца / сосиска / брокколи / 2 тоста со сливочным
+                          кремом
+                        </p>
+                        <p class="card-text price">260₽</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img
+                        src="https://pizzaclub21.ru/assets/img/menu/breakfest/breakfest-3.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Завтрак 3</h5>
+                        <p class="card-text text-muted">200 г</p>
+                        <p class="card-text text-muted breakfast-description">
+                          2 яйца / авокадо / лосось / лук порей / багет
+                        </p>
+                        <p class="card-text price">250₽</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img
+                        src="https://pizzaclub21.ru/assets/img/menu/breakfest/breakfest-4.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Завтрак 4</h5>
+                        <p class="card-text text-muted">155 г</p>
+                        <p class="card-text text-muted breakfast-description">
+                          хлеб Harrys/ яйцо / авокадо / лосось / микс салат /
+                          черри / сливочный кремт
+                        </p>
+                        <p class="card-text price">250₽</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-contact"
+              role="tabpanel"
+              aria-labelledby="pills-contact-tab"
+              tabindex="0"
+            >
+              <div
+                class="tab-pane fade show active"
+                role="tabpanel"
+                aria-labelledby="pills-home-tab"
+                tabindex="0"
+              >
+                <div
+                  class="row row-cols-2 row-cols-lg-4 row-cols-md-2 row-cols-sm-2 g-4 d-flex align-content-lg-center align-content-md-center align-content-sm-center"
+                >
+                  <div class="col">
+                    <div class="card">
+                      <img
+                        src="https://i.ytimg.com/vi/kbjfgE_gmEE/maxresdefault.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title dessert-title p-2">
+                          Классический чизкейк
+                        </h5>
+                        <p class="card-text text-muted p-3">120 г</p>
+                        <p class="card-text price">169₽</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img
+                        src="https://kulinarenok.ru/img/img_recept/24927/chizkeyk-tri-shokolada.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title dessert-title p-2">
+                          Чизкейк три шоколада
+                        </h5>
+                        <p class="card-text text-muted p-3">120 г</p>
+                        <p class="card-text price">169₽</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img
+                        src="https://pizzaclub21.ru/assets/img/menu/dessert/2.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title dessert-title ice-cream">
+                          Мороженое
+                        </h5>
+                        <p class="card-text text-muted dessert-description">
+                          Клубничное / Ванильное / Фисташковое / Шоколадное
+                        </p>
+                        <p class="card-text text-muted">90 г</p>
+                        <p class="card-text price">155₽</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img
+                        src="https://cdn.lifehacker.ru/wp-content/uploads/2019/11/Kak-prigotovit-voskhititelnyj-merengovyj-rulet_1574716230.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title dessert-title p-2">
+                          Меренговый рулет
+                        </h5>
+                        <p class="card-text text-muted p-3">200 г</p>
+                        <p class="card-text price">180₽</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="third-container" id="delivery">
+      <div class="col-12">
+        <div class="row delivery">
+          <div class="delivery-text">
+            <i class="fa fa-glass" aria-hidden="true"></i>
+            <p class="text_head">Мы становимся ближе, теперь у нас есть</p>
+            <p class="text_delivery"><strong>ДОСТАВКА</strong></p>
+            <div class="delivery_line"></div>
+            <p class="delivery_schedule text-muted">
+              <strong>ДОСТАВКА</strong> по городу Чебоксары с 10:00 до 21:00.
+              <br />Заказы принимаются ежедневно до 20:30. <br /><strong
+                >ДОСТАВКА</strong
+              >
+              в Новоюжный район/Солнечный от 1000 р.
+              <strong>БЕСПЛАТНАЯ,</strong> <br />до 1000 р всего 150 р.
+              <br /><strong>ДОСТАВКА</strong> в другие районы, включая Новый
+              город, 200 р. <br />От 1500 р. доставка будет
+              <strong>БЕСПЛАТНОЙ</strong>! <br />Время доставки от 15 минут до 1
+              часа
+            </p>
+            <a href="#main-menu"><button class="to_menu">К меню</button></a>
+          </div>
+          <div class="delivery-picture">
+            <img src="img/десерт.webp" alt="" class="dessert-photo" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
